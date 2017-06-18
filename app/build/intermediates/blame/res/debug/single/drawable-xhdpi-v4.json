@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\connect_check.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-xhdpi\\connect_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\connect_x1.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-xhdpi\\connect_x1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\connect_x2.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-xhdpi\\connect_x2.xml"
+    }
+]

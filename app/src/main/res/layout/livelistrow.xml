@@ -1,0 +1,546 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/broadTitle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/list_left_bg"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/selectVod1"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                android:background="@drawable/rec_pre1" />
+
+            <TextView
+                android:id="@+id/vodTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLength="17"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod3"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/selectVod4"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod5"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod5"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod6"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod6"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/selectVod7"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod7"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod8"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod8"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod9"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/hasVod9"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/selectVod10"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/hasVod10"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod11"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/hasVod11"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectVod12"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/list_select"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/hasVod12"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_pre1" />
+            <TextView
+                android:id="@+id/vodTime12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vodTitle12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="#444444"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

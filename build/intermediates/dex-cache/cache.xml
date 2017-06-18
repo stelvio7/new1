@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\Desktop\201703tv\new1\app\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432">
+        <dex dex="C:\Users\Administrator\Desktop\201703tv\new1\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2_974820158ed054eb4b51da0f3b3069a6212f295c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\Desktop\201703tv\new1\app\libs\RootTools-3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0366ac8a28a574b3964f360c027ad287d173cfa7">
+        <dex dex="C:\Users\Administrator\Desktop\201703tv\new1\app\build\intermediates\pre-dexed\debug\RootTools-3.4_b62f28150cd65f31bf72ec29b78f608da3811074.jar" />
+    </item>
+
+</items>

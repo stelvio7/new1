@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\mainmenu_sliding_open.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\anim\\mainmenu_sliding_open.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\menu_sliding_open.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\anim\\menu_sliding_open.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\listmenu_sliding_open.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\anim\\listmenu_sliding_open.xml"
+    }
+]

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<string name="task_progressing">처리중입니다..잠시만 기다리십시오..</string>
+ 	<string name="task_cancelled">작업이 취소되었습니다.</string>
+ 	<string name="str_network_error">네트워크 오류가 발생하였습니다.</string>
+ 	
+ 	
+    <string name="hello">Hello World, HantvActivity!</string>
+    <string name="app_name">한국TV</string>
+	<string name="check_recharge">충전 번호를 모두 입력하세요.</string>
+	<string name="check_recharge_complete">충전을 완료하였습니다.</string>
+	<string name="check_recharge_diff">충전 번호가 일치하지 않습니다.</string>
+	
+	<string name="check_child_4">4자리를 입력해주세요.</string>
+	<string name="check_child_no">비밀번호가 일치하지 않습니다.</string>
+	<string name="check_child_complete">설정이 완료되었습니다.</string>
+	<string name="check_child_modify">설정변경에 실패하였습니다.</string>
+	
+	 	<string name="str_wait">잠시만 기다려주세요..</string>
+	<string name="check_recharge_aleady">이미 충전한 번호입니다.</string>
+	<string name="check_recharge_error">오류가 발생하였습니다.다시 시도해주세요.</string>
+	<string name="ok">확인</string>
+	<string name="processing">데이터 처리중 </string>
+	<string name="wait">잠시만 기다려주세요.</string>
+	<string name="novideo">영상을 재생할 수 없습니다.</string>
+	<string name="continuevideo">이어보시겠습니까?</string>
+	<string name="videocancel">잘못되 접근경로 입니다.</string>
+	<string name="ageunder">선택하신 동영상은 시청가능대 연령의 동영상이 아닙니다.</string>
+	<string name="safechild">19세 미만 관람불가 - 아동보호 설정을 해제하세요!</string>
+	<string name="memberm">일반회원입니다. 쿠폰등록 후 사용해 주십시오.</string>
+	<string name="nopoint">시청할 포인트가 부족합니다. 포인트를 확인해 주십시오.</string>
+	<string name="menuupdate">업데이트</string>
+	<string name="menudrama">드라마</string>
+	<string name="menushow">쇼/오락</string>
+	<string name="menuedu">교육/다큐</string>
+	<string name="menucable">케이블</string>
+	<string name="menubox">드라마창고</string>
+	<string name="searchtext">검색</string>
+	<string name="nosearch">검색결과가 없습니다.</string>
+	<string name="nonet">인터넷 연결이 되지 않습니다. 인터넷 연결을 확인하세요.</string>
+	<string name="savebox">보관함에 저장되었습니다.</string>
+	
+	<string name="title">제&#160;&#160;&#160;&#160;목</string>
+	<string name="date">방송일</string>
+	<string name="age">관람가</string>
+	<string name="director">감&#160;&#160;&#160;&#160;독</string>
+	<string name="actor">출연진</string>
+	<string name="story">줄거리</string>
+	
+	<string name="genre">장&#160;&#160;&#160;&#160;르</string>
+	<string name="point">평&#160;&#160;&#160;&#160;점</string>
+	<string name="opendate">개봉일</string>
+	
+	<string name="yes">네</string>
+	<string name="no">아니오</string>
+	<string name="update">새로운 버전이 있습니다. 업데이트 하시겠습니까?</string>
+	<string name="noupdate">현재 최신버전입니다.</string>
+	<string name="serverchanged"> 서버로 연결되었습니다.</string>
+	<string name="servernotchange">현재 서버입니다.</string>
+	
+	<string name="nowbroadcast">현재 방송 :</string>
+	<string name="nextbroadcast">다음 방송 :</string>
+</resources>

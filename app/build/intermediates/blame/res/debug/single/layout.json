@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialogpopup.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\dialogpopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shortchannel.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\shortchannel.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\videopage.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\videopage.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shoppingcoverflow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\shoppingcoverflow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detailcable.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\detailcable.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shoppingdetailcoverflow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\shoppingdetailcoverflow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\infoyellow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\infoyellow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mainmenu.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\mainmenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\infoshopping.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\infoshopping.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\livelistrow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\livelistrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detailshow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\detailshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\infoexchange.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\infoexchange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listlive.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\listlive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\child.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\child.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\infodelivery.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\infodelivery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\connect.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\connect.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recharge.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\recharge.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detaildrama.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\detaildrama.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialogpopupmovie.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\dialogpopupmovie.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\livemenu_row.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\livemenu_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\restore.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\restore.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\coverflow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\coverflow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialogpopupplay.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\dialogpopupplay.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\yellowdetailcoverflow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\yellowdetailcoverflow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialogpopupdelete.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\dialogpopupdelete.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\speedcheck.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\speedcheck.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\livecoverflow.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\layout\\livecoverflow.xml"
+    }
+]
