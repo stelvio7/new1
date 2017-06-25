@@ -9,6 +9,7 @@ import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -83,6 +84,9 @@ public class LiveListActivity extends Activity {
 	private TextView nowTime;
 	private TextView nextTitle;
 	private TextView nextTime;
+
+	private Button toggleBtn1;
+	private Button toggleBtn2;
 	
 	private TimerTask timerTask;
 	//private ImageView btnLeft = null;
@@ -131,10 +135,28 @@ public class LiveListActivity extends Activity {
         	detailshowbtn[i] = (ImageView)findViewById(detailshowbtnRes[i]);
         	borders[i] = (ImageView) findViewById(detailshowBorderRes[i]);
         }
-        
-       
-       
-        
+
+		toggleBtn1 = (Button)findViewById(R.id.toggleBtn1);
+		toggleBtn1.setOnFocusChangeListener(new OnFocusChangeListener() {
+			public void onFocusChange(View v, boolean hasFocus) {
+				if (hasFocus) {
+					toggleBtn1.setTextColor(Color.parseColor("#0060A5"));
+				} else {
+					toggleBtn1.setTextColor(Color.parseColor("#FFFFFF"));
+				}
+			}
+		});
+
+		toggleBtn2 = (Button)findViewById(R.id.toggleBtn2);
+		toggleBtn2.setOnFocusChangeListener(new OnFocusChangeListener() {
+			public void onFocusChange(View v, boolean hasFocus) {
+				if (hasFocus) {
+					toggleBtn2.setTextColor(Color.parseColor("#0060A5"));
+				} else {
+					toggleBtn2.setTextColor(Color.parseColor("#FFFFFF"));
+				}
+			}
+		});
         
         /*btnLeft = (ImageView) findViewById(R.id.arrowleft);
 		btnRight = (ImageView) findViewById(R.id.arrowright);

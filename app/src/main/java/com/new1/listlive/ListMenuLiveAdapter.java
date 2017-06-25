@@ -58,14 +58,14 @@ public class ListMenuLiveAdapter extends BaseAdapter {
             convertView = mInflater.inflate(R.layout.livemenu_row, parent, false);
 
             viewHolder = new LiveMenuListViewHolder();
-            viewHolder.ivNowBroad = (ImageView)convertView.findViewById(R.id.ivNowBroad);
+            //viewHolder.ivNowBroad = (ImageView)convertView.findViewById(R.id.ivNowBroad);
             viewHolder.txtNowBroad = (TextView)convertView.findViewById(R.id.txtNowBroad);
-            viewHolder.ivNowChannel = (ImageView)convertView.findViewById(R.id.ivNowChannel);
+            //viewHolder.ivNowChannel = (ImageView)convertView.findViewById(R.id.ivNowChannel);
             viewHolder.txtNowChannel = (TextView)convertView.findViewById(R.id.txtNowChannel);
             viewHolder.txtNextTime = (TextView)convertView.findViewById(R.id.txtNextTime);
             viewHolder.txtNextBroad = (TextView)convertView.findViewById(R.id.txtNextBroad);
-            viewHolder.ivLine1 = (ImageView)convertView.findViewById(R.id.ivLine1);
-            viewHolder.ivLine2 = (ImageView)convertView.findViewById(R.id.ivLine2);
+            //viewHolder.ivLine1 = (ImageView)convertView.findViewById(R.id.ivLine1);
+            //viewHolder.ivLine2 = (ImageView)convertView.findViewById(R.id.ivLine2);
             viewHolder.ll1 = (LinearLayout) convertView.findViewById(R.id.ll1);
             viewHolder.ll2 = (LinearLayout) convertView.findViewById(R.id.ll2);
 

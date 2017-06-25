@@ -8,51 +8,15 @@
         android:focusable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/livelist_selectback"
         android:orientation="vertical">
         <LinearLayout
-            android:focusable="false"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="8dp">
-            <ImageView
-                android:id="@+id/ivNowBroad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nowbroad" />
-            <TextView
-                android:id="@+id/txtNowBroad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:maxLines="1"
-                android:layout_marginLeft="10dp"
-                android:text="현재방송"
-                android:gravity="center"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-        </LinearLayout>
-        <ImageView
-            android:id="@+id/ivLine1"
-            android:layout_width="270dp"
-            android:layout_height="1dp"
-            android:focusable="false"
-            android:layout_gravity="center"
-            android:background="@drawable/broadmenu_line" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="59dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:focusable="false"
             android:padding="8dp">
-            <ImageView
-                android:id="@+id/ivNowChannel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:focusable="false"
-                android:background="@drawable/nowchannel" />
             <TextView
                 android:layout_weight="1"
                 android:id="@+id/txtNowChannel"
@@ -62,25 +26,32 @@
                 android:layout_marginLeft="10dp"
                 android:focusable="false"
                 android:maxLines="1"
+                android:layout_marginRight="60dp"
                 android:text="현재채널"
                 android:gravity="left"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
-            <ImageView
+                android:textColor="#222222"
+                android:textSize="28sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/txtNowBroad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right|center_vertical"
-                android:layout_marginLeft="10dp"
-                android:focusable="false"
-                android:background="@drawable/menu_ok" />
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:layout_marginLeft="100dp"
+                android:text="현재방송"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
         </LinearLayout>
-        <ImageView
-            android:id="@+id/ivLine2"
-            android:layout_width="270dp"
-            android:layout_height="1dp"
-            android:focusable="false"
-            android:layout_gravity="center"
-            android:background="@drawable/broadmenu_line" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,6 +63,7 @@
                 android:id="@+id/txtNextTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
                 android:text="05시13분"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -99,7 +71,7 @@
                 android:textSize="17sp"/>
             <TextView
                 android:id="@+id/txtNextBroad"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp"

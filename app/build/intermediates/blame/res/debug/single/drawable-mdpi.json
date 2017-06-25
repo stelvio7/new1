@@ -468,6 +468,10 @@
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\x_5.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\livelist_tab.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\livelist_tab.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\button_broadcast_cable_on.png",
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\button_broadcast_cable_on.png"
     },
@@ -788,12 +792,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\button_live_news_off.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\key_text_on.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\key_text_on.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\button_mypage_pay_off.png",
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\button_mypage_pay_off.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\key_text_on.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\key_text_on.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\button_safe_safeon_on.png",
@@ -1300,6 +1304,10 @@
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\key_back_off.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\liveselect_back.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\liveselect_back.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\payment_text.png",
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\payment_text.png"
     },
@@ -1442,6 +1450,14 @@
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\child_modify.png",
         "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\child_modify.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\livelist_selectback.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\livelist_selectback.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\liveselect_on.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\src\\main\\res\\drawable-mdpi\\liveselect_on.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\201703tv\\new1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\key_jj_on.png",

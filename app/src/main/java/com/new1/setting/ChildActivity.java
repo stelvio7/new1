@@ -29,20 +29,28 @@ import android.view.KeyEvent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ToggleButton;
 
 public class ChildActivity extends Activity {
     /** Called when the activity is first created. */
 	private String strPasswd;
+    private String strNowPasswd;
 	private String strPasswdConfirm;
 	private EditText editPasswd;
-	private EditText editPasswdModify;
+    private EditText editPasswdNow;
+    private EditText editPasswdConfirm;
+
+    private Button toggleBtn1;
+    private Button toggleBtn2;
+    private Button toggleBtn3;
 	
-	private boolean safeMode;
+	private boolean safeMode12;
+	private boolean safeMode15;
+	private boolean safeMode19;
 	
-	private ImageButton btnChild;
-	private ImageButton btnSend;
+	private Button btnModify;
+	private Button btnSend;
 	
 	private SendRechargeTask sendRechargeTask= null;
 	private ProgressDialog mProgress;
@@ -52,6 +60,8 @@ public class ChildActivity extends Activity {
 	private ImageView imgLock = null;
 	private ImageView imgNet = null;
 	private Context mContext = null;
+
+	private boolean isCheckedPasswd = false;
 	
 	public ChildActivity(){
 	}
@@ -87,8 +97,13 @@ public class ChildActivity extends Activity {
         
         
         editPasswd =  (EditText) findViewById(R.id.editPasswd);
-        editPasswdModify =  (EditText) findViewById(R.id.editPasswdModify);
-        editPasswd.requestFocus();
+        editPasswdNow =  (EditText) findViewById(R.id.editPasswdNow);
+        editPasswdConfirm =  (EditText) findViewById(R.id.editPasswdConfirm);
+
+		toggleBtn1 =  (Button) findViewById(R.id.toggleBtn1);
+		toggleBtn2 =  (Button) findViewById(R.id.toggleBtn2);
+		toggleBtn3 =  (Button) findViewById(R.id.toggleBtn3);
+		toggleBtn1.requestFocus();
         
         //editPasswd.setInputType(InputType.TYPE_CLASS_NUMBER
        // 		 |InputType.TYPE_NUMBER_FLAG_DECIMAL);
@@ -111,7 +126,7 @@ public class ChildActivity extends Activity {
           });   
        // editPasswdModify.setInputType(InputType.TYPE_CLASS_NUMBER
         //		 |InputType.TYPE_NUMBER_FLAG_DECIMAL);
-        editPasswdModify.setOnKeyListener(new OnKeyListener() {           
+        editPasswdNow.setOnKeyListener(new OnKeyListener() {
         	public boolean onKey(View v, int keyCode, KeyEvent event) {           
                 if (event.getAction() == KeyEvent.ACTION_DOWN) {       
                   if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_ENTER) {   
@@ -131,39 +146,89 @@ public class ChildActivity extends Activity {
        
         
         
-        btnChild = (ImageButton) findViewById(R.id.btnChild);
+        btnModify = (Button) findViewById(R.id.btnModify);
 		InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-		imm.hideSoftInputFromWindow(btnChild.getWindowToken(), 0);
-		
-		safeMode =  getChildset();
-        if(safeMode){
-        	btnChild.setBackgroundResource(R.drawable.button_safe_on_);
+		imm.hideSoftInputFromWindow(toggleBtn1.getWindowToken(), 0);
+		btnModify.setOnClickListener(new OnClickListener() {
+		   @Override
+		   public void onClick(View arg0) {
+			   // TODO Auto-generated method stub
+			   clickModifyButton();
+		   }
+	   });
+
+
+		safeMode12 =  getChildset12();
+        if(safeMode12){
+			toggleBtn1.setBackgroundResource(R.drawable.button_safe_on_);
         }else{
-        	btnChild.setBackgroundResource(R.drawable.button_safe_off_);
+			toggleBtn1.setBackgroundResource(R.drawable.button_safe_off_);
         }
-        
-        btnChild.setOnClickListener(new OnClickListener() {
+
+		toggleBtn1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				if(safeMode){
-					safeMode = false;
-					btnChild.setBackgroundResource(R.drawable.button_safe_off_);
+				if(safeMode12){
+					safeMode12 = false;
+					toggleBtn1.setBackgroundResource(R.drawable.button_safe_off_);
 				}else{
-					safeMode = true;
-					btnChild.setBackgroundResource(R.drawable.button_safe_on_);
+					safeMode12 = true;
+					toggleBtn1.setBackgroundResource(R.drawable.button_safe_on_);
 				}
-			}           
-        	             
-          });  
-        btnSend = (ImageButton) findViewById(R.id.btnSend);
+			}
+		});
+
+		safeMode15 =  getChildset15();
+		if(safeMode15){
+			toggleBtn2.setBackgroundResource(R.drawable.button_safe_on_);
+		}else{
+			toggleBtn2.setBackgroundResource(R.drawable.button_safe_off_);
+		}
+
+		toggleBtn2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(safeMode15){
+					safeMode15 = false;
+					toggleBtn2.setBackgroundResource(R.drawable.button_safe_off_);
+				}else{
+					safeMode15 = true;
+					toggleBtn2.setBackgroundResource(R.drawable.button_safe_on_);
+				}
+			}
+		});
+
+		safeMode19 =  getChildset19();
+		if(safeMode19){
+			toggleBtn3.setBackgroundResource(R.drawable.button_safe_on_);
+		}else{
+			toggleBtn3.setBackgroundResource(R.drawable.button_safe_off_);
+		}
+
+		toggleBtn3.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				if(safeMode19){
+					safeMode19 = false;
+					toggleBtn3.setBackgroundResource(R.drawable.button_safe_off_);
+				}else{
+					safeMode19 = true;
+					toggleBtn3.setBackgroundResource(R.drawable.button_safe_on_);
+				}
+			}
+		});
+
+        btnSend = (Button) findViewById(R.id.btnSave);
         InputMethodManager imm2 = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 		imm2.hideSoftInputFromWindow(btnSend.getWindowToken(), 0);
         btnSend.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				clickOkButton();
+				clickSaveButton();
 			}
 
           });
@@ -202,8 +267,8 @@ public class ChildActivity extends Activity {
 		// TODO Auto-generated method stub
 		if(editPasswd != null)
 			editPasswd = null;
-		if(editPasswdModify != null)
-			editPasswdModify = null;
+		if(editPasswdNow != null)
+            editPasswdNow = null;
 		super.onDestroy();
 	}
 
@@ -230,14 +295,46 @@ public class ChildActivity extends Activity {
 		}else if(keyCode == KeyEvent.KEYCODE_DPAD_UP) {
 
 		}else if(keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_ENTER) {
-			clickOkButton();
+			//clickOkButton();
 		}
   	  return super.onKeyDown(keyCode, event); 
 	}
+
+	private void clickModifyButton(){
+		if(editPasswdNow.getText().toString().length() < 4 || editPasswdConfirm.getText().toString().length() < 4) {
+			AlertDialog.Builder alt_bld = new AlertDialog.Builder(this);
+			alt_bld.setMessage(R.string.check_child_4);
+			alt_bld.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					dialog.dismiss();
+				}
+			});
+			AlertDialog alert = alt_bld.create();
+			alert.show();
+		}else{
+			strNowPasswd = editPasswdNow.getText().toString();
+			strPasswdConfirm = editPasswdConfirm.getText().toString();
+
+			if(getChildNum().equals(strNowPasswd)){
+				sendRechargeTask = new SendRechargeTask(getBaseContext());
+				sendRechargeTask.execute();
+			}else{
+				AlertDialog.Builder alt_bld = new AlertDialog.Builder(ChildActivity.this);
+				alt_bld.setMessage(R.string.check_child_no);
+				alt_bld.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.dismiss();
+					}
+				});
+				AlertDialog alert = alt_bld.create();
+				alert.show();
+			}
+		}
+	}
 	
-	private void clickOkButton(){
+	private void clickSaveButton(){
 		//텍스트 필드를 모두 안채웠을때 
-		if(editPasswd.getText().toString().length() < 4 || (editPasswdModify.getText().toString().length() < 4 && editPasswdModify.getText().toString().length() > 0)){
+		if(editPasswd.getText().toString().length() < 4){
 			AlertDialog.Builder alt_bld = new AlertDialog.Builder(this);
 		    alt_bld.setMessage(R.string.check_child_4);
 		    alt_bld.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
@@ -249,11 +346,22 @@ public class ChildActivity extends Activity {
 		    alert.show();
 		 }else{
 			 strPasswd = editPasswd.getText().toString();
-			 strPasswdConfirm = editPasswdModify.getText().toString();
-			 
+
 			 if(getChildNum().equals(strPasswd)){
-				 sendRechargeTask = new SendRechargeTask(getBaseContext());
-			     sendRechargeTask.execute();
+				 isCheckedPasswd = true;
+
+				 AlertDialog.Builder alt_bld = new AlertDialog.Builder(ChildActivity.this);
+				 alt_bld.setMessage(R.string.check_child_ok);
+				 alt_bld.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+					 public void onClick(DialogInterface dialog, int which) {
+						 dialog.dismiss();
+					 }
+				 });
+				 AlertDialog alert = alt_bld.create();
+				 alert.show();
+
+				 //sendRechargeTask = new SendRechargeTask(getBaseContext());
+			     //sendRechargeTask.execute();
 			 }else{
 				 AlertDialog.Builder alt_bld = new AlertDialog.Builder(ChildActivity.this);
     		    alt_bld.setMessage(R.string.check_child_no);
@@ -283,6 +391,10 @@ public class ChildActivity extends Activity {
     		// TODO Auto-generated method stub
     		super.onPreExecute();
     		mProgress = ProgressDialog.show(ChildActivity.this, "", getResources().getString(R.string.wait), true, true);
+
+            if(strPasswdConfirm.equals("")){
+                strPasswdConfirm = editPasswdConfirm.getText().toString().trim();
+            }
     		//mProgress.setCancelable(false);
     	}
     
@@ -293,12 +405,10 @@ public class ChildActivity extends Activity {
     		PostHttp postmake = new PostHttp();
     		ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
     		nameValuePairs.add(new BasicNameValuePair("id", getMacaddress()));
-    		if(strPasswdConfirm.equals("")){
-    			strPasswdConfirm = editPasswd.getText().toString().trim();
-    		}
+
 			nameValuePairs.add(new BasicNameValuePair("adult_pwd", strPasswdConfirm));
 			String srtMode = "Y";
-			if(safeMode)
+			if(safeMode12)
 				srtMode = "Y";
 			else 
 				srtMode = "N";
@@ -334,14 +444,12 @@ public class ChildActivity extends Activity {
     		    AlertDialog alert = alt_bld.create();
     		    alert.show();
 
-    		    saveChildSet(safeMode);
-    		    if(!Util.getChildset(mContext))
-    		    	imgLock.setBackgroundResource(R.drawable.image_main_lock_off);
-    		    else
-    		    	imgLock.setBackgroundResource(R.drawable.image_main_lock_on);
+				//saveChildSet12();
+				//saveChildSet15();
+				//saveChildSet19();
     		    saveChildNum(strPasswdConfirm);
-    		    editPasswd.setText("");
-    			editPasswdModify.setText("");
+    		    editPasswdConfirm.setText("");
+    			editPasswdNow.setText("");
     		}else if(result.equals("N")){
     			AlertDialog.Builder alt_bld = new AlertDialog.Builder(ChildActivity.this);
     		    alt_bld.setMessage(R.string.check_child_modify);
@@ -367,16 +475,40 @@ public class ChildActivity extends Activity {
     	}
     }
 	 
-	 private void saveChildSet(boolean passwd){
+	 private void saveChildSet12(boolean passwd){
 		 SharedPreferences sp = getSharedPreferences(Util.getApplicationName(getApplicationContext()), MODE_PRIVATE);
 		 SharedPreferences.Editor editor = sp.edit();
-		 editor.putBoolean("chilset", passwd);
+		 editor.putBoolean("chilset12", passwd);
 		 editor.commit();
 	 }
 	 
-	 private boolean getChildset(){
+	 private boolean getChildset12(){
 		SharedPreferences sp = getSharedPreferences(Util.getApplicationName(getApplicationContext()), MODE_PRIVATE);
-		return sp.getBoolean("chilset", false);
+		return sp.getBoolean("chilset12", false);
+	}
+
+	private void saveChildSet15(boolean passwd){
+		SharedPreferences sp = getSharedPreferences(Util.getApplicationName(getApplicationContext()), MODE_PRIVATE);
+		SharedPreferences.Editor editor = sp.edit();
+		editor.putBoolean("chilset15", passwd);
+		editor.commit();
+	}
+
+	private boolean getChildset15(){
+		SharedPreferences sp = getSharedPreferences(Util.getApplicationName(getApplicationContext()), MODE_PRIVATE);
+		return sp.getBoolean("chilset15", false);
+	}
+
+	private void saveChildSet19(boolean passwd){
+		SharedPreferences sp = getSharedPreferences(Util.getApplicationName(getApplicationContext()), MODE_PRIVATE);
+		SharedPreferences.Editor editor = sp.edit();
+		editor.putBoolean("chilset19", passwd);
+		editor.commit();
+	}
+
+	private boolean getChildset19(){
+		SharedPreferences sp = getSharedPreferences(Util.getApplicationName(getApplicationContext()), MODE_PRIVATE);
+		return sp.getBoolean("chilset19", false);
 	}
 	 
 	 private void saveChildNum(String passwd){

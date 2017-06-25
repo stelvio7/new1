@@ -91,9 +91,11 @@
      <LinearLayout
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_marginTop="120dp"
-	    android:gravity="center"
-	    android:orientation="vertical">
+		 android:gravity="center"
+	    android:orientation="vertical"
+		 android:layout_above="@+id/backImage"
+		 android:layout_toRightOf="@+id/tel"
+		 android:layout_marginBottom="92dp">
      	<ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -110,13 +112,13 @@
 				 android:gravity="center_horizontal"
 				 android:layout_margin="10dp"
 				 android:background="@drawable/child_12">
-				 <ToggleButton
+				 <Button
 					 android:id="@+id/toggleBtn1"
 					 android:layout_gravity="bottom"
 					 android:layout_marginBottom="8dp"
 					 android:layout_width="wrap_content"
 					 android:layout_height="wrap_content"
-					 android:background="@drawable/button_safe_12"
+					 android:background="@drawable/button_safe_on_"
 					 />
 			 </LinearLayout>
 			 <LinearLayout
@@ -125,13 +127,13 @@
 				 android:gravity="center_horizontal"
 				 android:layout_margin="10dp"
 				 android:background="@drawable/child_15">
-				 <ToggleButton
+				 <Button
 					 android:id="@+id/toggleBtn2"
 					 android:layout_gravity="bottom"
 					 android:layout_marginBottom="8dp"
 					 android:layout_width="wrap_content"
 					 android:layout_height="wrap_content"
-					 android:background="@drawable/button_safe_12"
+					 android:background="@drawable/button_safe_on_"
 					 />
 			 </LinearLayout>
 			 <LinearLayout
@@ -140,56 +142,67 @@
 				 android:gravity="center_horizontal"
 				 android:layout_margin="10dp"
 				 android:background="@drawable/child_19">
-				 <ToggleButton
+				 <Button
 					 android:id="@+id/toggleBtn3"
 					 android:layout_gravity="bottom"
 					 android:layout_marginBottom="8dp"
 					 android:layout_width="wrap_content"
 					 android:layout_height="wrap_content"
-					 android:background="@drawable/button_safe_12"
+					 android:background="@drawable/button_safe_on_"
 					 />
 			 </LinearLayout>
 			 <LinearLayout
 				 android:layout_width="wrap_content"
 				 android:layout_height="wrap_content"
 				 android:gravity="center_horizontal"
+				 android:orientation="vertical"
 				 android:layout_margin="10dp"
 				 android:background="@drawable/child_confirm">
 				 <EditText
 					 android:id="@+id/editPasswd"
 					 android:layout_width="wrap_content"
 					 android:layout_height="wrap_content"
+					 android:nextFocusDown="@+id/btnSave"
 					 android:layout_marginTop="70dp"
 					 android:textColor="#FFFFFF"
-					 android:gravity="center"
-					 android:textSize="36sp"
+					 android:textSize="32sp"
 					 android:inputType="number"
 					 android:text=""
 					 android:maxLength="4"
 					 android:background="@null"
 					 android:maxLines="1"/>
-				 <Button
-					 android:id="@+id/btnSave"
+
+				 <LinearLayout
 					 android:layout_width="wrap_content"
-					 android:layout_height="wrap_content"
-					 android:layout_gravity="bottom"
-					 android:layout_marginBottom="8dp"
-					 android:background="@drawable/button_safe_save" />
+					 android:layout_height="match_parent"
+					 android:layout_weight="1">
+
+					 <Button
+						 android:id="@+id/btnSave"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:nextFocusUp="@+id/editPasswd"
+						 android:layout_gravity="bottom"
+						 android:layout_marginBottom="8dp"
+						 android:background="@drawable/button_safe_save" />
+				 </LinearLayout>
 			 </LinearLayout>
 			 <LinearLayout
 				 android:layout_width="wrap_content"
 				 android:layout_height="wrap_content"
 				 android:gravity="center_horizontal"
+				 android:orientation="vertical"
 				 android:layout_margin="10dp"
 				 android:background="@drawable/child_modify">
 				 <EditText
 					 android:id="@+id/editPasswdNow"
 					 android:layout_width="wrap_content"
 					 android:layout_height="wrap_content"
-					 android:layout_marginTop="70dp"
+					 android:nextFocusDown="@+id/editPasswdConfirm"
+					 android:layout_marginTop="60dp"
 					 android:textColor="#FFFFFF"
 					 android:gravity="center"
-					 android:textSize="36sp"
+					 android:textSize="32sp"
 					 android:inputType="number"
 					 android:text=""
 					 android:maxLength="4"
@@ -199,23 +212,30 @@
 					 android:id="@+id/editPasswdConfirm"
 					 android:layout_width="wrap_content"
 					 android:layout_height="wrap_content"
-					 android:layout_marginTop="180dp"
+					 android:layout_marginTop="73dp"
+					 android:nextFocusDown="@+id/btnModify"
 					 android:textColor="#FFFFFF"
 					 android:gravity="center"
-					 android:textSize="36sp"
+					 android:textSize="32sp"
 					 android:inputType="number"
 					 android:text=""
 					 android:maxLength="4"
 					 android:background="@null"
 					 android:maxLines="1"/>
-				 <Button
-					 android:id="@+id/btnModify"
-					 android:layout_gravity="bottom"
-					 android:layout_marginBottom="8dp"
+				 <LinearLayout
 					 android:layout_width="wrap_content"
-					 android:layout_height="wrap_content"
-					 android:background="@drawable/button_safe_modify"
-					 />
+					 android:layout_height="match_parent"
+					 android:layout_weight="1">
+					 <Button
+						 android:id="@+id/btnModify"
+						 android:layout_gravity="bottom"
+						 android:layout_marginBottom="8dp"
+						 android:nextFocusUp="@+id/editPasswdConfirm"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:background="@drawable/button_safe_modify"
+						 />
+				 </LinearLayout>
 			 </LinearLayout>
 		 </LinearLayout>
 		 <ImageView
@@ -225,65 +245,4 @@
 			 android:layout_gravity="right"
 			 android:background="@drawable/child_pass"/>
      </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_centerInParent="true"
-	    android:background="@drawable/image_safe_box"
-	    android:orientation="vertical">
-	    <EditText
-	        android:id="@+id/editPasswd"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="325dp"
-	        android:layout_marginTop="42dp"
-	        android:textColor="#FFFFFF"
-	        android:gravity="center"
-	        android:textSize="36sp"
-	        android:inputType="number"
-	        android:text=""
-	        android:maxLength="4"
-	        android:background="@drawable/button_safe_off"
-	        android:maxLines="1"/>
-	     <ImageButton
-	        android:id="@+id/btnChild"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="325dp"
-	        android:layout_marginTop="21dp"
-	        android:windowSoftInputMode="stateHidden"
-	        android:background="@drawable/button_safe_on_"/>
-	    <EditText
-	        android:id="@+id/editPasswdModify"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="325dp"
-	        android:layout_marginTop="21dp"
-	        android:textColor="#FFFFFF"
-	         android:inputType="number"
-	        android:textSize="36sp"
-	        android:gravity="center"
-	        android:text=""
-	        android:maxLength="4"
-	        android:background="@drawable/button_safe_off"
-	        android:maxLines="1"/>
-	    </LinearLayout>
-	     <LinearLayout
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-		 android:layout_centerHorizontal="true"
-	    android:orientation="vertical">
-		<ImageButton
-		       android:id="@+id/btnSend"
-		       android:layout_width="wrap_content"
-		       android:layout_height="wrap_content"
-		       android:layout_marginBottom="120dp"
-		       android:windowSoftInputMode="stateHidden"
-		       android:background="@drawable/button_safe_save"></ImageButton>
-	</LinearLayout>
-	    
-    
 </RelativeLayout>

@@ -99,7 +99,7 @@ public class Util {
 		defaultDisplay.getRealMetrics(realMetrics);
 		return realMetrics.heightPixels;                           // 가로
 	}
-	
+
 	public static boolean getChildset(Context context){
 		SharedPreferences sp = context.getSharedPreferences(Util.getApplicationName(context), Context.MODE_PRIVATE);
 		return sp.getBoolean("chilset", false);

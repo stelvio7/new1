@@ -111,7 +111,7 @@
 										/>
 									<TextView
 										android:id="@+id/txtGenre"
-										android:layout_width="280dp"
+										android:layout_width="270dp"
 										android:layout_height="wrap_content"
 										android:layout_marginLeft="20dp"
 										android:lineSpacingExtra="4dp"
@@ -133,7 +133,7 @@
 										/>
 									<TextView
 										android:id="@+id/txtPoint"
-										android:layout_width="280dp"
+										android:layout_width="270dp"
 										android:layout_height="wrap_content"
 										android:layout_marginLeft="20dp"
 										android:lineSpacingExtra="4dp"
@@ -155,7 +155,7 @@
 										/>
 									<TextView
 										android:id="@+id/txtAge"
-										android:layout_width="280dp"
+										android:layout_width="270dp"
 										android:layout_height="wrap_content"
 										android:layout_marginLeft="20dp"
 										android:lineSpacingExtra="4dp"
@@ -177,7 +177,7 @@
 										/>
 									<TextView
 										android:id="@+id/txtDate"
-										android:layout_width="280dp"
+										android:layout_width="270dp"
 										android:layout_height="wrap_content"
 										android:layout_marginLeft="20dp"
 										android:lineSpacingExtra="4dp"
@@ -199,7 +199,7 @@
 										/>
 									<TextView
 										android:id="@+id/txtDirector"
-										android:layout_width="280dp"
+										android:layout_width="270dp"
 										android:layout_height="wrap_content"
 										android:layout_marginLeft="20dp"
 										android:lineSpacingExtra="4dp"
@@ -221,7 +221,7 @@
 										/>
 									<TextView
 										android:id="@+id/txtCast"
-										android:layout_width="280dp"
+										android:layout_width="270dp"
 										android:layout_height="wrap_content"
 										android:layout_marginLeft="20dp"
 										android:lineSpacingExtra="4dp"
@@ -245,7 +245,7 @@
 									/>
 								<TextView
 									android:id="@+id/txtStory"
-									android:layout_width="270dp"
+									android:layout_width="280dp"
 									android:layout_height="wrap_content"
 									android:layout_marginLeft="20dp"
 									android:textSize="18sp"
