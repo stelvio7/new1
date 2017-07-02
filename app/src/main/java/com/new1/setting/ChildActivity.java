@@ -161,6 +161,7 @@ public class ChildActivity extends Activity {
 		safeMode12 =  getChildset12();
         if(safeMode12){
 			toggleBtn1.setBackgroundResource(R.drawable.button_safe_on_);
+
         }else{
 			toggleBtn1.setBackgroundResource(R.drawable.button_safe_off_);
         }
@@ -172,6 +173,10 @@ public class ChildActivity extends Activity {
 				if(safeMode12){
 					safeMode12 = false;
 					toggleBtn1.setBackgroundResource(R.drawable.button_safe_off_);
+					safeMode15 = false;
+					toggleBtn2.setBackgroundResource(R.drawable.button_safe_off_);
+					safeMode19 = false;
+					toggleBtn3.setBackgroundResource(R.drawable.button_safe_off_);
 				}else{
 					safeMode12 = true;
 					toggleBtn1.setBackgroundResource(R.drawable.button_safe_on_);
@@ -193,9 +198,13 @@ public class ChildActivity extends Activity {
 				if(safeMode15){
 					safeMode15 = false;
 					toggleBtn2.setBackgroundResource(R.drawable.button_safe_off_);
+					safeMode19 = false;
+					toggleBtn3.setBackgroundResource(R.drawable.button_safe_off_);
 				}else{
 					safeMode15 = true;
 					toggleBtn2.setBackgroundResource(R.drawable.button_safe_on_);
+                    safeMode12 = true;
+                    toggleBtn1.setBackgroundResource(R.drawable.button_safe_on_);
 				}
 			}
 		});
@@ -217,6 +226,10 @@ public class ChildActivity extends Activity {
 				}else{
 					safeMode19 = true;
 					toggleBtn3.setBackgroundResource(R.drawable.button_safe_on_);
+                    safeMode15 = true;
+                    toggleBtn2.setBackgroundResource(R.drawable.button_safe_on_);
+                    safeMode12 = true;
+                    toggleBtn1.setBackgroundResource(R.drawable.button_safe_on_);
 				}
 			}
 		});

@@ -13,7 +13,7 @@
 	
 	<string name="check_child_4">4자리를 입력해주세요.</string>
 	<string name="check_child_no">비밀번호가 일치하지 않습니다.</string>
-	<string name="check_child_ok">비밀번호가 일치합니다.</string>
+	<string name="check_child_ok">저장되었습니다.</string>
 	<string name="check_child_complete">설정이 완료되었습니다.</string>
 	<string name="check_child_modify">설정변경에 실패하였습니다.</string>
 	
